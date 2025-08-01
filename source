@@ -1,5 +1,5 @@
 if IY_LOADED and not _G.IY_DEBUG == true then
-    -- error("Infinite Yield is already running!", 0)
+    -- error("Fish Yield is already running!", 0)
     return
 end
 
@@ -126,7 +126,7 @@ if makefolder and isfolder and writefile and isfile then
     end)
 end
 
-currentVersion = "6.3.3"
+currentVersion = "7.3.3"
 
 ScaledHolder = Instance.new("Frame")
 Scale = Instance.new("UIScale")
@@ -324,7 +324,7 @@ Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 250, 0, 20)
 Title.Font = Enum.Font.SourceSans
 Title.TextSize = 18
-Title.Text = "Infinite Yield FE v" .. currentVersion
+Title.Text = "Fish Yield v" .. currentVersion
 
 do
 	local emoji = ({
@@ -347,7 +347,8 @@ do
 			return ("03 %02d"):format(G)
 		end)(tonumber(os.date"%Y"))] = "🥚",
 		["10 31"] = "🎃",
-		["12 25"] = "🎄"
+		["12 25"] = "🎄",
+                ["7 1"] = "🐟"
 	})[os.date("%m %d")]
 	if emoji then
 		Title.Text = ("%s %s %s"):format(emoji, Title.Text, emoji)
